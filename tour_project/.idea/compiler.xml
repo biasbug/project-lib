@@ -14,12 +14,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="toru_utils" target="1.5" />
-      <module name="tour_dao" target="1.5" />
-      <module name="tour_domain" target="1.5" />
+      <module name="toru_utils" target="1.8" />
+      <module name="tour_dao" target="1.8" />
+      <module name="tour_domain" target="1.8" />
       <module name="tour_project" target="1.5" />
-      <module name="tour_service" target="1.5" />
-      <module name="tour_web" target="1.7" />
+      <module name="tour_service" target="1.8" />
+      <module name="tour_web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
