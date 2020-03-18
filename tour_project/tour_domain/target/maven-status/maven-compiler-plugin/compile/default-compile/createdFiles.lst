@@ -1,1 +1,4 @@
+domain\Orders.class
 domain\Product.class
+domain\Member.class
+domain\Traveller.class

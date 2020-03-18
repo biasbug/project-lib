@@ -13,4 +13,7 @@ public interface ProductDao {
 
     @Insert("insert into product(productNum,productName,cityName,departureTime,productPrice,productDesc,productStatus) values(#{productNum},#{productName},#{cityName},#{departureTime},#{productPrice},#{productDesc},#{productStatus})")
     public void save(Product product);
+
+    @Select("select * from product where id = #{id}")
+    public Product findById(String id);
 }

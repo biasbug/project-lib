@@ -50,7 +50,7 @@
 					</a></li>
 				</ul></li>
 			<li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
-					<span>基础数据</span> <span class="pull-right-container"> <i
+					<span>数据管理</span> <span class="pull-right-container"> <i
 						class="fa fa-angle-left pull-right"></i>
 				</span>
 			</a>
@@ -61,7 +61,7 @@
 							<i class="fa fa-circle-o"></i> 产品管理
 					</a></li>
 					<li id="orders-setting"><a
-						href="${pageContext.request.contextPath}/orders/findAll?page=1&pageSize=3"> <i
+						href="${pageContext.request.contextPath}/orders/findByPage"> <i
 							class="fa fa-circle-o"></i> 订单管理
 					</a></li>
 
