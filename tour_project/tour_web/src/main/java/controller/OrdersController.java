@@ -39,4 +39,13 @@ public class OrdersController {
         mav.setViewName("orders-list-page");
         return mav;
     }
+
+    @RequestMapping("/findById")
+    public ModelAndView findById(@RequestParam(name = "id",required = true)String ordersId){
+        ModelAndView modelAndView = new ModelAndView();
+        Orders orders = ordersService.findById(ordersId);
+        modelAndView.addObject("orders",orders);
+        modelAndView.setViewName("orders-show");
+        return modelAndView;
+    }
 }

@@ -25,4 +25,8 @@ public class OrdersService {
     public List<Orders> findByPage(Integer page,Integer pageSize){
         return ordersDao.findAll();
     }
+
+    public Orders findById(String orderId){
+        return ordersDao.findById(orderId);
+    }
 }

@@ -1,2 +1,4 @@
 dao\ProductDao.class
+dao\MemberDao.class
+dao\TravellerDao.class
 dao\OrdersDao.class
