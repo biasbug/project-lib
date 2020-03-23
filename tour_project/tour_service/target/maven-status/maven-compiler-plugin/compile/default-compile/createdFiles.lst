@@ -1,2 +1,8 @@
-service\OrdersService.class
+service\PermissionService.class
 service\ProductService.class
+service\PermissionServiceImpl.class
+service\UserService.class
+service\OrdersService.class
+service\RoleServiceImpl.class
+service\RoleService.class
+service\UserServiceImpl.class

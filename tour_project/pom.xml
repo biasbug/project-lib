@@ -22,11 +22,10 @@
         <log4j.version>1.2.12</log4j.version>
         <oracle.version>10.2.0.2.0</oracle.version>
         <mybatis.version>3.4.5</mybatis.version>
-        <spring.security.version>5.0.1.RELEASE</spring.security.version>
+        <spring.security.version>5.0.2.RELEASE</spring.security.version>
     </properties>
 
-    <dependencies>
-        <!-- spring -->
+    <dependencies>        <!-- spring -->
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
@@ -106,9 +105,7 @@
             <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
-        </dependency>
-
-        <!-- log start -->
+        </dependency>        <!-- log start -->
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
@@ -123,8 +120,7 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <version>${slf4j.version}</version>
-        </dependency>
-        <!-- log end -->
+        </dependency>        <!-- log end -->
 
         <dependency>
             <groupId>org.mybatis</groupId>
@@ -172,7 +168,7 @@
         <dependency>
             <groupId>com.oracle</groupId>
             <artifactId>ojdbc14</artifactId>
-            <version>${oracle.version}</version>
+            <version>10.2.0.2.0</version>
         </dependency>
 
         <dependency>
@@ -181,16 +177,26 @@
             <version>1.0</version>
         </dependency>
 
-        <!--JWT-->
         <dependency>
             <groupId>com.auth0</groupId>
             <artifactId>java-jwt</artifactId>
             <version>3.2.0</version>
         </dependency>
+        <!--引入json的依赖-->
         <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt</artifactId>
-            <version>0.7.0</version>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.9.0</version>
         </dependency>
     </dependencies>
     <build>

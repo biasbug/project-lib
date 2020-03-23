@@ -1,4 +1,7 @@
-domain\Orders.class
-domain\Product.class
+domain\UserInfo.class
+domain\Role.class
 domain\Member.class
 domain\Traveller.class
+domain\Orders.class
+domain\Permission.class
+domain\Product.class

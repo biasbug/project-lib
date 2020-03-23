@@ -1,4 +1,7 @@
 dao\ProductDao.class
 dao\MemberDao.class
 dao\TravellerDao.class
+dao\UserDao.class
 dao\OrdersDao.class
+dao\RoleDao.class
+dao\PermissionDao.class
