@@ -12,4 +12,8 @@ public interface UserService extends UserDetailsService {
     public List<UserInfo> findAll();
     public void save(UserInfo userInfo);
     UserInfo findById(String id);
+
+    List<Role> findOtherRole(String id);
+
+    void addRoleToUser(String userId, String[] roleIds);
 }

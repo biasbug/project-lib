@@ -146,7 +146,7 @@
 									<c:forEach items="${permissionList}" var="p">
 										<tr>
 											<td><input name="ids" type="checkbox"></td>
-											<td>${p.id }</td>
+											<td>${p.id}</td>
 											<td>${p.permissionName }</td>
 											<td>${p.url }</td>
 											<td class="text-center">

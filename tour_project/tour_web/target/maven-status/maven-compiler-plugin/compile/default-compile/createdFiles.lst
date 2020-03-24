@@ -3,3 +3,4 @@ controller\OrdersController.class
 controller\UserController.class
 controller\RoleController.class
 controller\ProductController.class
+controller\TestController.class

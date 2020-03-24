@@ -2,7 +2,9 @@ package service;
 
 import domain.Permission;
 
+import java.util.List;
+
 public interface PermissionService {
-    public Permission findAll();
+    public List<Permission> findAll();
     public void save(Permission permission);
 }

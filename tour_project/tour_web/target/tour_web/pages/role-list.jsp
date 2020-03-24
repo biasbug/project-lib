@@ -150,7 +150,8 @@
 											<td>${role.roleName }</td>
 											<td>${role.roleDesc }</td>																				
 											<td class="text-center">
-												<a href="${pageContext.request.contextPath}/role/findById?id=${role.id}" class="btn bg-olive btn-xs">详情</a>
+												<a href="${pageContext.request.contextPath}/role/findByRoleId?id=${role.id}" class="btn bg-olive btn-xs">详情</a>
+												<a href="${pageContext.request.contextPath}/role/findRoleByIdAndAllPermission?id=${role.id}" class="btn bg-olive btn-xs">添加权限</a>
 												<a href="${pageContext.request.contextPath}/role/deleteById?id=${role.id}" class="btn bg-red btn-xs">删除角色</a>
 											</td>
 										</tr>

@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import service.PermissionService;
 
+import java.util.List;
+
 @Controller
 @RequestMapping("/permission")
 public class PermissionController {
@@ -17,7 +19,8 @@ public class PermissionController {
     @RequestMapping("/findAll")
     public ModelAndView findAll(){
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("permissionList",permissionService.findAll());
+        List<Permission> permissionList = permissionService.findAll();
+        modelAndView.addObject("permissionList",permissionList);
         modelAndView.setViewName("permission-list");
         return modelAndView;
     }

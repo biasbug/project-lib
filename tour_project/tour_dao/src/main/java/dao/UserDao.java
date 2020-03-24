@@ -1,5 +1,6 @@
 package dao;
 
+import domain.Role;
 import domain.UserInfo;
 import org.apache.ibatis.annotations.*;
 
@@ -36,4 +37,10 @@ public interface UserDao {
             @Result(property = "roles",column = "id",javaType = java.util.List.class,many = @Many(select = "dao.RoleDao.findById"))
     })
     UserInfo findById(String id);
+
+    @Select("select * from role where id not in(select roleId from users_role where userId = #{id})")
+    List<Role> findOtherRole(String id);
+
+    @Insert("insert into users_role values(#{userId},#{roleId})")
+    void addRoleToUser(@Param("userId") String userId, @Param("roleId") String roleId);
 }
