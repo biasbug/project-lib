@@ -1,4 +1,5 @@
 controller\PermissionController.class
+controller\LogAop.class
 controller\OrdersController.class
 controller\UserController.class
 controller\RoleController.class

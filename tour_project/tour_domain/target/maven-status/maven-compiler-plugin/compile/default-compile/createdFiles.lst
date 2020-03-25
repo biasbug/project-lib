@@ -2,6 +2,7 @@ domain\UserInfo.class
 domain\Role.class
 domain\Member.class
 domain\Traveller.class
+domain\SysLog.class
 domain\Orders.class
 domain\Permission.class
 domain\Product.class

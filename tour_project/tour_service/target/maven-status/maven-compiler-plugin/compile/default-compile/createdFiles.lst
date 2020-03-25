@@ -1,3 +1,4 @@
+service\SysLogService.class
 service\PermissionService.class
 service\ProductService.class
 service\PermissionServiceImpl.class
@@ -6,3 +7,4 @@ service\OrdersService.class
 service\RoleServiceImpl.class
 service\RoleService.class
 service\UserServiceImpl.class
+service\SysLogServiceImpl.class
