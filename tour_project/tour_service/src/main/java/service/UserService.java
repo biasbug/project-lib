@@ -16,4 +16,6 @@ public interface UserService extends UserDetailsService {
     List<Role> findOtherRole(String id);
 
     void addRoleToUser(String userId, String[] roleIds);
+
+    void deleteById(String id);
 }

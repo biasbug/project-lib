@@ -6,6 +6,7 @@ import domain.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -69,6 +70,15 @@ public class UserServiceImpl implements UserService {
         for (String roleId : roleIds) {
             userDao.addRoleToUser(userId,roleId);
         }
+    }
+
+    @Override
+    public void deleteById(String id) {
+        UserInfo userInfo = userDao.findById(id);
+        if("admin".equals(userInfo.getUsername())) return;
+        //先删除中间表，在删除用户表的内容
+        userDao.deleteRoleToUserById(id);
+        userDao.deleteById(id);
     }
 
 //    public static void main(String[] args) {

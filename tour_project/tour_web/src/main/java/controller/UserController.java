@@ -52,4 +52,10 @@ public class UserController {
         userService.addRoleToUser(userId,roleIds);
         return "redirect:findAll";
     }
+
+    @RequestMapping("/deleteById")
+    public String deleteById(String id){
+        userService.deleteById(id);
+        return "redirect:findAll";
+    }
 }

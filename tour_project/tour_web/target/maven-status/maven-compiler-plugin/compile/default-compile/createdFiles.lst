@@ -1,7 +1,8 @@
-controller\PermissionController.class
+controller\SysLogDao.class
 controller\LogAop.class
-controller\OrdersController.class
 controller\UserController.class
-controller\RoleController.class
 controller\ProductController.class
 controller\TestController.class
+controller\PermissionController.class
+controller\OrdersController.class
+controller\RoleController.class

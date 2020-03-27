@@ -12,9 +12,9 @@
 
 
 
-<title>数据 - AdminLTE2定制版</title>
-<meta name="description" content="AdminLTE2定制版">
-<meta name="keywords" content="AdminLTE2定制版">
+	<title>后台管理</title>
+	<meta name="description" content="后台管理">
+	<meta name="keywords" content="后台管理">
 
 
 
