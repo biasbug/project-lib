@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
     @Autowired
-    @Qualifier("passwordEncoder")
+   @Qualifier("passwordEncoder")
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
 
@@ -33,7 +33,7 @@ public class UserServiceImpl implements UserService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         UserInfo userInfo = userDao.findByName(username);
 //        User user=new User(userInfo.getUsername(),"{noop}"+userInfo.getPassword(),getAuthority(userInfo.getRoles()));
-        User user=new User(userInfo.getUsername(),userInfo.getPassword(),userInfo.getStatus()==0?false:true,true,true,true,getAuthority(userInfo.getRoles()));
+        User user=new User(userInfo.getUsername(),userInfo.getPassword(),userInfo.getStatus()==1,true,true,true,getAuthority(userInfo.getRoles()));
         return user;
     }
 

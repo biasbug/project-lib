@@ -56,10 +56,10 @@
   </filter-mapping>
 
   <!--配置403错误页面-->
-  <error-page>
-    <error-code>403</error-code>
-    <location>/403.jsp</location>
-  </error-page>
+  <!--<error-page>-->
+    <!--<error-code>403</error-code>-->
+    <!--<location>/403.jsp</location>-->
+  <!--</error-page>-->
   <!--配置默认页面-->
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>

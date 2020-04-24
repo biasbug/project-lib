@@ -13,6 +13,7 @@
 	http://www.springframework.org/schema/tx
 	http://www.springframework.org/schema/tx/spring-tx.xsd">
 
+
     <!-- 开启注解扫描，管理service和dao -->
     <context:component-scan base-package="service"></context:component-scan>
     <context:component-scan base-package="dao"></context:component-scan>
@@ -26,6 +27,12 @@
         <property name="password" value="${jdbc.password}" />
     </bean>
 
+    <bean id="mysqlDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/mybatis?characterEncoding=utf-8&amp;serverTimezone=UTC" />
+        <property name="user" value="root" />
+        <property name="password" value="Wasxf_520" />
+    </bean>
     <!--创建SqlSessionFactory-->
     <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"></property>

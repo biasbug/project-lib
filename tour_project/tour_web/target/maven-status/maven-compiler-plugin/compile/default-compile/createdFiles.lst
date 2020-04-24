@@ -1,8 +1,10 @@
-controller\SysLogDao.class
+filter\MyAuthenticationFilter.class
 controller\LogAop.class
+authentication\AdminAuthenticationEntryPoint.class
 controller\UserController.class
 controller\ProductController.class
 controller\TestController.class
 controller\PermissionController.class
+controller\SysLogController.class
 controller\OrdersController.class
 controller\RoleController.class

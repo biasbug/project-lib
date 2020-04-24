@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 		 pageEncoding="UTF-8"%>
+<%@taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -34,6 +35,7 @@
 		<p class="login-box-msg">登录系统</p>
 
 		<form action="${pageContext.request.contextPath}/login" method="post">
+			<security:csrfInput/>
 			<div class="form-group has-feedback">
 				<input type="text" name="username" class="form-control"
 					   placeholder="用户名" value="admin"> <span
@@ -47,7 +49,7 @@
 			<div class="row">
 				<div class="col-xs-8">
 					<div class="checkbox icheck">
-						<label><input type="checkbox"> 记住 下次自动登录</label>
+						<label><input type="checkbox" name="remember-me" value="true"> 记住 下次自动登录</label>
 					</div>
 				</div>
 				<!-- /.col -->
